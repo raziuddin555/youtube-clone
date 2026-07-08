@@ -9,7 +9,7 @@ function CommentForm({ initialText = "", onSubmit, submitLabel = "Comment", onCa
   const [text, setText] = useState(initialText);
   const [submitting, setSubmitting] = useState(false);
 
-  // If initialText changes (edit mode and reset), sync it
+  // If initialText changes (edit mode & reset), sync it
   useEffect(() => {
     setText(initialText);
   }, [initialText]);
@@ -53,6 +53,8 @@ function CommentForm({ initialText = "", onSubmit, submitLabel = "Comment", onCa
           />
           <div className="cf-actions">
             {onCancel && (
+
+              // Cancel button only shows in edit mode, not for new comments
               <button
                 type="button"
                 className="cf-btn cf-btn--ghost"
