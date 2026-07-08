@@ -17,7 +17,8 @@ export const getMyPlaylists = async(req, res, next) => {
     }
 };
 
-// POST /api/playlists  { name }
+//  createPlaylist, getPlaylistById, renamePlaylist, deletePlaylist, addVideoToPlaylist, removeVideoFromPlaylist functions are defined below. Each function checks for required fields, validates user authorization, and interacts with the Playlist and Video models to perform the respective operations. Responses are sent back to the client with appropriate status codes and messages.
+
 export const createPlaylist = async(req, res, next) => {
     try {
         const { name } = req.body;
@@ -38,6 +39,7 @@ export const createPlaylist = async(req, res, next) => {
 };
 
 // GET /api/playlists/:id — full detail, videos populated for the grid view
+
 export const getPlaylistById = async(req, res, next) => {
     try {
         const playlist = await Playlist.findById(req.params.id).populate({
@@ -59,6 +61,8 @@ export const getPlaylistById = async(req, res, next) => {
 };
 
 // PUT /api/playlists/:id  { name } — rename
+// Rename a playlist. The new name is sent in the request body. The handler checks if the playlist exists and if the authenticated user is the owner before allowing the rename operation. If successful, it returns the updated playlist.
+
 export const renamePlaylist = async(req, res, next) => {
     try {
         const playlist = await Playlist.findById(req.params.id);
@@ -83,6 +87,7 @@ export const renamePlaylist = async(req, res, next) => {
 };
 
 // DELETE /api/playlists/:id
+// Delete a playlist. The handler checks if the playlist exists and if the authenticated user is the owner before allowing the delete operation. If successful, it returns a success message.
 export const deletePlaylist = async(req, res, next) => {
     try {
         const playlist = await Playlist.findById(req.params.id);
@@ -101,6 +106,7 @@ export const deletePlaylist = async(req, res, next) => {
 };
 
 // POST /api/playlists/:id/videos/:videoId — add (no-op if already in there)
+// Add video 
 export const addVideoToPlaylist = async(req, res, next) => {
     try {
         const { id, videoId } = req.params;
