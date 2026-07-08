@@ -44,6 +44,8 @@ export const registerUser = async(req, res, next) => {
     }
 };
 
+
+// Login an existing user
 export const loginUser = async(req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
