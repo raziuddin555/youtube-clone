@@ -405,7 +405,7 @@ const run = async() => {
     console.log("💬 Creating comments...");
     const commentDocs = [];
     for (const video of videos) {
-        const pool = COMMENT_POOLS[video.category] ? ? COMMENT_POOLS["Education"];
+        const pool = COMMENT_POOLS[video.category] ?? COMMENT_POOLS["Education"];
         const texts = shuffle(pool).slice(0, rand(3, 7));
         for (const text of texts) {
             commentDocs.push({
