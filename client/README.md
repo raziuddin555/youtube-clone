@@ -79,7 +79,7 @@ ytclone-mern/
 ```bash
 cd server
 npm install
-copy .env.example .env
+copy .env
 ```
 
 Edit `server/.env`:
@@ -106,7 +106,7 @@ The API runs at `http://localhost:5000/api`.
 ```bash
 cd client
 npm install
-copy .env.example .env
+copy .env
 npm run dev
 ```
 
@@ -146,18 +146,12 @@ A quick path through every feature, useful for grading or a first-time look:
 
 ## Sample Logins
 
-All seeded users use `password123`.
+
 
 | Email | User |
 | --- | --- |
 | mohdraziuddin123@gmail.com | 123456789 |
 | shaishta123@gmail.com | 123456789 |
-| alex@example.com | alex_builds |
-| nikhil@example.com | nikhil_xo |
-| sara@example.com | sara_music |
-| dev@example.com | dev_anon |
-| rahul@example.com | gamer_rahul |
-| learn@example.com | learnwithme |
 
 ## API Endpoints
 
