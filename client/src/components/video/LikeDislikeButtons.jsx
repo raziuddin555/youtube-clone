@@ -1,5 +1,4 @@
-// components/video/LikeDislikeButtons.jsx — FE-06
-// Rubric: "Implement complete functionality for the Like and Dislike buttons."
+// "Implement complete functionality for the Like and Dislike buttons."
 function LikeDislikeButtons({
   likesCount = 0,
   dislikesCount = 0,
