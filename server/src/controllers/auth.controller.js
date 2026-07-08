@@ -5,6 +5,8 @@ import { validationResult } from "express-validator";
 import User from "../models/User.model.js";
 import { generateToken } from "../utils/generateToken.js";
 
+
+// Register a new user
 export const registerUser = async(req, res, next) => {
     // 1. Check if any validator rule failed
     const errors = validationResult(req);
