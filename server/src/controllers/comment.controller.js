@@ -75,6 +75,8 @@ export const updateComment = async(req, res, next) => {
     }
 };
 
+
+//  delete comment function is defined below. It checks if the comment exists and if the authenticated user is authorized to delete it. If both conditions are met, the comment is deleted from the database, and a success message is returned to the client.
 export const deleteComment = async(req, res, next) => {
     try {
         const comment = await Comment.findById(req.params.id);
