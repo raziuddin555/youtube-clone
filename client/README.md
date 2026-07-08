@@ -2,7 +2,7 @@
 
 Full-stack YouTube clone built for the capstone requirement using MongoDB, Express, React with Vite, and Node.js.
 
-> **Repository:** 
+> **Repository:**  (https://github.com/raziuddin555/youtube-clone)
 
 ## For Evaluators
 
