@@ -9,7 +9,7 @@ function CommentForm({ initialText = "", onSubmit, submitLabel = "Comment", onCa
   const [text, setText] = useState(initialText);
   const [submitting, setSubmitting] = useState(false);
 
-  // If initialText changes (edit mode reset), sync it
+  // If initialText changes (edit mode and reset), sync it
   useEffect(() => {
     setText(initialText);
   }, [initialText]);
