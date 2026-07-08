@@ -46,6 +46,8 @@ function CommentItem({ comment, isOwner, onEdit, onDelete }) {
 
         {isOwner && !editing && (
           <div className="ci-actions">
+
+            {/* Edit button */}
             <button
               className="ci-action-btn"
               onClick={() => setEditing(true)}
