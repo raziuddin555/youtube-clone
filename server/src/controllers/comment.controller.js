@@ -6,6 +6,7 @@
 import Comment from "../models/Comment.model.js";
 import Video from "../models/Video.model.js";
 
+// comment.controller.js handles all comment-related operations, including retrieving comments for a specific video, adding new comments, updating existing comments, and deleting comments. Each function ensures that the user is authenticated and authorized to perform the action, and it interacts with the Comment and Video models to manage comment data in the database.
 export const getCommentsForVideo = async(req, res, next) => {
     try {
         const comments = await Comment.find({ video: req.params.videoId })
