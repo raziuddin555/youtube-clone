@@ -19,6 +19,7 @@ export const getCommentsForVideo = async(req, res, next) => {
     }
 };
 
+//  add comment, update comment, delete comment functions are defined below. Each function checks for required fields, validates user authorization, and interacts with the Comment model to perform the respective operations. Responses are sent back to the client with appropriate status codes and messages.
 export const addComment = async(req, res, next) => {
     try {
         const { video, text } = req.body;
