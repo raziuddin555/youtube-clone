@@ -5,6 +5,8 @@ import Channel from "../models/Channel.model.js";
 import User from "../models/User.model.js";
 import Video from "../models/Video.model.js";
 
+
+// Create a new channel for the authenticated user
 export const createChannel = async(req, res, next) => {
     try {
         const { channelName, description } = req.body;
