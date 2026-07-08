@@ -58,8 +58,8 @@ function CreateChannelForm({ onSubmit, loading }) {
           </div>
 
           <p className="ccf-notice">
-            By creating a channel you agree to our Terms of Service.
-            Changes made to your name and profile picture are visible only on this site.
+            By Creating a channel you agree to our Terms of Service.
+            Changes made to your name & profile pictures are visible only on this site.
           </p>
 
           <div className="ccf-footer">
