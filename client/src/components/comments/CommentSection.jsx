@@ -11,13 +11,13 @@ function CommentSection({ videoId, comments = [], onAdd, onEdit, onDelete }) {
     <div className="comment-section">
       <h3 className="cs-title">{comments.length} Comment{comments.length !== 1 ? "s" : ""}</h3>
 
-      {/* Add comment */}
+      {/* Add comments */}
       <CommentForm
         onSubmit={(text) => onAdd(videoId, text)}
         submitLabel="Comment"
       />
 
-      {/* Comment list */}
+      {/* Comment lists */}
       <div className="cs-list">
         {comments.length === 0 ? (
           <p className="cs-empty">No comments yet. Be the first!</p>
