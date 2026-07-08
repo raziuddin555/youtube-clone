@@ -4,7 +4,7 @@ import { useAuth } from "../../hooks/useAuth.js";
 
 function ProtectedRoute({ children }) {
   const { isAuthed, loading } = useAuth();
-  // While AuthContext is still rehydrating the token, render nothing
+  // While AuthContext is still rehydrating the tokens and  render nothing
   // (prevents a flash-redirect to /login on page refresh)
   if (loading) return null;
   return isAuthed ? children : <Navigate to="/login" replace />;
