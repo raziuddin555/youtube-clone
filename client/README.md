@@ -3,8 +3,11 @@
 Full-stack YouTube clone built for the capstone requirement using MongoDB, Express, React with Vite, and Node.js.
 
 > **Repository:**  (https://github.com/raziuddin555/youtube-clone)
+# DemoVideo :  
+(https://drive.google.com/file/d/1uFde_9R8gm3Jpoq7h_6X40zD6_q8cjgL/view?usp=drivesdk)
 
-## For Evaluators
+
+# For Evaluators
 
 - **Setup** — see [Setup](#setup) below; takes under 5 minutes with `npm run seed`.
 - **Features** — see [Feature Checklist](#feature-checklist) and [API Endpoints](#api-endpoints).
@@ -16,7 +19,7 @@ Full-stack YouTube clone built for the capstone requirement using MongoDB, Expre
   *(covers sign up/login, search & filter, watching a video, like/dislike,
   adding a comment, and creating/editing/deleting a video from your channel)*
 
-## Feature Checklist
+# Feature Checklist
 
 | Area | Implemented |
 | --- | --- |
@@ -32,7 +35,7 @@ Full-stack YouTube clone built for the capstone requirement using MongoDB, Expre
 | Responsive UI | Mobile, tablet, and desktop layouts |
 | Seed data | 8 users, 8 channels, 40 videos, 6 categories, generated comments |
 
-## Tech Stack
+# Tech Stack
 
 - Frontend: React 18, Vite, React Router, Axios
 - Backend: Node.js, Express.js, Mongoose
@@ -40,7 +43,7 @@ Full-stack YouTube clone built for the capstone requirement using MongoDB, Expre
 - Authentication: JWT with bcrypt password hashing
 - Validation: express-validator on the backend and form validation on the frontend
 
-## Project Structure
+# Project Structure
 
 ```text
 ytclone-mern/
@@ -72,9 +75,9 @@ ytclone-mern/
       validators/
 ```
 
-## Setup
+# Setup
 
-### Backend
+# Backend
 
 ```bash
 cd server
@@ -101,7 +104,7 @@ npm run dev
 
 The API runs at `http://localhost:5000/api`.
 
-### Frontend
+# Frontend
 
 ```bash
 cd client
@@ -112,7 +115,7 @@ npm run dev
 
 The frontend runs at `http://localhost:5173`.
 
-## Usage Walkthrough
+# Usage Walkthrough
 
 A quick path through every feature, useful for grading or a first-time look:
 
@@ -144,7 +147,9 @@ A quick path through every feature, useful for grading or a first-time look:
    Sign in button, and write actions (upload, like, comment) become
    unavailable until you log back in.
 
-## Sample Logins
+
+
+# Sample Logins
 
 
 
@@ -153,7 +158,7 @@ A quick path through every feature, useful for grading or a first-time look:
 | mohdraziuddin123@gmail.com | 123456789 |
 | shaishta123@gmail.com | 123456789 |
 
-## API Endpoints
+# API Endpoints
 
 | Method | Path | Auth | Description |
 | --- | --- | --- | --- |
@@ -175,7 +180,7 @@ A quick path through every feature, useful for grading or a first-time look:
 | PUT | `/api/comments/:id` | Yes | Edit own comment |
 | DELETE | `/api/comments/:id` | Yes | Delete own comment |
 
-## Notes
+# Notes
 
 - Video files are stored as URLs, not uploaded files.
 - Nested comments are intentionally excluded, matching the assignment brief.
@@ -183,6 +188,6 @@ A quick path through every feature, useful for grading or a first-time look:
 - Use `npm run seed` before evaluation so MongoDB has users, channels, videos, and comments.
 
 
-## AUTHOR
+# AUTHOR
 
 Mohd Raziuddin
