@@ -58,6 +58,7 @@ function Header({ onToggleSidebar, onSearch }) {
           <sup className="yt-header__logo-in">IN</sup>
         </Link>
       </div>
+      
 
       {/* Center — search */}
       <form className="yt-header__search" onSubmit={handleSearchSubmit}>
