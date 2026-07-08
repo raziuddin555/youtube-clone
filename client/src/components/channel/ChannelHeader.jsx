@@ -46,8 +46,8 @@ function ChannelHeader({ channel, isOwner, isSubscribed, subscribeLoading, onTog
           {description && <p className="ch-desc">{description}</p>}
         </div>
 
-        {/* Owners manage their own channel elsewhere — subscribing to
-            yourself isn't a real thing, so the button just doesn't exist. */}
+        {/* Owners manage their own channel and  elsewhere — subscribing to
+            yourself isn't a real thing, so the button just doesn't exists. */}
         {!isOwner && (
           <button
             className={`ch-subscribe-btn${isSubscribed ? " ch-subscribe-btn--subscribed" : ""}`}
