@@ -63,6 +63,8 @@ export const getChannelById = async(req, res, next) => {
     }
 };
 
+
+// updateChannel allows the owner of a channel to update its details. It checks if the authenticated user is the owner of the channel before allowing updates. The fields that can be updated include channelName, description, channelBanner, and avatar. If the channel is not found or the user is not authorized, appropriate error responses are returned.
 export const updateChannel = async(req, res, next) => {
     try {
         const channel = await Channel.findById(req.params.id);
