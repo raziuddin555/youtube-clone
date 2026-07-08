@@ -1,7 +1,4 @@
-// server/src/config/db.js
-// Single responsibility: connect to MongoDB Atlas (or local) via Mongoose.
-// Phase 1 ticket.
-
+// connect db
 import mongoose from "mongoose";
 
 export const connectDB = async() => {
