@@ -62,7 +62,7 @@ function ChannelVideoList({ videos = [], isOwner, onDelete }) {
                     className="cvl-action-btn cvl-action-btn--delete"
                     onClick={() => onDelete(video._id)}
                   >
-                    Delete button 
+                    Delete 
                   </button>
                 </div>
               )}
